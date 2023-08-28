@@ -4,22 +4,29 @@
     "description": "template node js project",
     "main": "index.js",
     "scripts": {
-      "start": "node index",
-      "dev": "nodemon index",
-      "lint": "eslint . --fix"
+        "start": "node index",
+        "dev": "nodemon index",
+        "lint": "eslint . --fix"
     },
     "type": "module",
     "keywords": [
-      "node",
-      "app"
+        "node",
+        "app"
     ],
     "author": "Maksim Leskin <maksim.leskin@methed.ru>",
     "license": "ISC",
     "devDependencies": {
-      "eslint": "^8.46.0",
-      "eslint-config-prettier": "^8.10.0",
-      "eslint-plugin-prettier": "^5.0.0",
-      "nodemon": "^3.0.1",
-      "prettier": "3.0.1"
+        "browser-sync": "^2.29.3",
+        "eslint": "^8.46.0",
+        "eslint-config-prettier": "^8.10.0",
+        "eslint-plugin-prettier": "^5.0.0",
+        "jquery": "^3.7.1",
+        "nodemon": "^3.0.1",
+        "postcss": "^8.4.28",
+        "prettier": "3.0.1"
+    },
+    "dependencies": {
+        "js-cookie": "^3.0.5",
+        "uglify-js": "^3.17.4"
     }
-  }
+}
