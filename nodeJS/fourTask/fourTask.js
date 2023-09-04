@@ -18,14 +18,18 @@ const intervalId = setInterval(runTick, 1000);
 
 ee.on('Tick', runTick);
 
-ee.emit ('Tick');
+ee.emit('Tick');
 
 // Task 2
 
 const sendMessage = (username, message) => {
-    console.log(`${username} : ${message}`);
+    ee.emit('sendMessage', username, message);
 };
 
 const receiveMessage = () => {
-
+    ee.prependListener('sendMessage', (username, message) =>  console.log(`${username} : ${message}`));
 };
+
+receiveMessage();
+
+sendMessage("vasya", 'Отправил сообщение')
