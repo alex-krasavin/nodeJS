@@ -13,6 +13,7 @@ const runTick = () => {
     }
 }
 
+
 const intervalId = setInterval(runTick, 1000);
 
 ee.on('Tick', runTick);
